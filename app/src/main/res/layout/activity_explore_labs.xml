@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable content area -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- App Bar -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Explore Labs"
+                android:gravity="center"
+                android:background="#89A9D4"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <!-- Search Bar -->
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:hint="Search"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- Location Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Lab Location:"
+                android:paddingTop="12dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Location Spinner -->
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:padding="12dp" />
+
+            <!-- Software Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Software"
+                android:paddingTop="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Word Processing Dropdown -->
+            <TextView
+                android:id="@+id/toggle_word_processing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Word Processing:"
+                android:background="#89A9D4"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/word_processing_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Microsoft Word"
+                    android:background="#F0F0F0"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Google Docs"
+                    android:background="#F0F0F0"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <!-- Database Management Dropdown -->
+            <TextView
+                android:id="@+id/toggle_database"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Database Management:"
+                android:background="#89A9D4"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:id="@+id/database_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MySQL"
+                    android:background="#F0F0F0"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Oracle Database"
+                    android:background="#F0F0F0"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <!-- Buttons -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="#0167FF"
+                android:text="DIRECTION"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_orientation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#57E4E4"
+                android:text="ORIENTATION SENSORS"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

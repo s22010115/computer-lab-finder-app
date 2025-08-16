@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#82A9D8"
+        android:gravity="center"
+        android:text="Find Open Labs"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Label for spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Location:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- Spinner for location selection -->
+    <Spinner
+        android:id="@+id/spinnerLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Select lab location" />
+
+    <!-- TextView to show when no labs found -->
+    <TextView
+        android:id="@+id/textViewNoLabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No labs found"
+        android:textSize="16sp"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="16dp" />
+
+    <!-- RecyclerView for displaying labs -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLabs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
+

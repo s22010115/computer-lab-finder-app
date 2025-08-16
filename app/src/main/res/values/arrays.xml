@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string-array name="locations_array">
+            <item>Select Location</item>
+            <item>Nawala</item>
+            <item>Kandy</item>
+            <item>Matara</item>
+            <!-- Add more locations as needed -->
+        </string-array>
+
+
+        <string-array name="locations_arrays">
+            <item>Main Campus</item>
+            <item>North Campus</item>
+            <item>South Campus</item>
+        </string-array>
+
+        <string-array name="software_array">
+            <item>All Software</item>
+            <item>Microsoft Word</item>
+            <item>Google Docs</item>
+            <item>MySQL</item>
+            <item>Oracle Database</item>
+        </string-array>
+
+
+</resources>

@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ViewBookingActivity">
+
+    <!-- Top Blue Header -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2E57A1"
+        android:gravity="center"
+        android:text="View Booking"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Booking Card -->
+    <LinearLayout
+        android:id="@+id/bookingCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0e0e0"
+        android:orientation="vertical"
+        android:layout_below="@id/headerText"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:text="Name: K.Tarini Buwanaji"
+            android:textSize="16sp" />
+
+        <!-- Registration -->
+        <TextView
+            android:id="@+id/txtRegNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:text="Registration No: 522513094"
+            android:textSize="16sp" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@android:drawable/ic_lock_idle_alarm"
+            android:text="8 AM - 4PM"
+            android:textSize="16sp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:text="April 20, 2024"
+            android:textSize="16sp" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"
+            android:text="Matara"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Delete Button -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_direction"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="50dp"
+        android:background="#E91E63"
+        android:text="DELETE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <!-- Bottom Navigation -->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
+
+

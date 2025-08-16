@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RatingBarYellow" parent="Theme.MaterialComponents.Light">
+        <!-- Gold/Yellow color for activated stars -->
+        <item name="colorControlActivated">#FFD700</item>
+    </style>
+</resources>

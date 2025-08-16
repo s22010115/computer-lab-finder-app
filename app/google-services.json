@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "488294779769",
+    "project_id": "computerlabfinder",
+    "storage_bucket": "computerlabfinder.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488294779769:android:2277f6c0ecb94c2c4d7da8",
+        "android_client_info": {
+          "package_name": "com.s22010115.myproject522513094"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJsW6QV_DPk4N8_WDz3tX3q3fD1Bgcd28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
